@@ -1,0 +1,30 @@
+/* Минимальный modern-reset. Используется как база для всех страниц. */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+html { scroll-behavior: smooth; }  /* плавный скролл по якорям — без JS */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button { background: none; border: none; cursor: pointer; }
+
+ul, ol { list-style: none; padding: 0; }
+
+a { color: inherit; text-decoration: none; }
